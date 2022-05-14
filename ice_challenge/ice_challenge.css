@@ -1,0 +1,52 @@
+main, footer {
+    max-width: 400px;
+    margin: auto;
+}
+
+main{
+    color: white;
+}
+
+body {
+    background-size: 50%;
+    background-color: rgb(226, 118, 136);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h1:hover {
+    color: black;
+}
+
+blockquote {
+    font-size: 12px;
+}
+
+ol {
+    text-align: left;
+    font-size: 14px;
+    color: black;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    max-width: 250px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 165px;
+    margin: auto;
+}
+
