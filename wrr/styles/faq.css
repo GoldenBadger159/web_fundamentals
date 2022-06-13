@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: #FF580A;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/rafting54_1024.jpg");
+    background-color: #58A4B0;
+}
+
+nav a {
+    text-align: center;
+    color: #1B1B22;
+    text-decoration: underline;
+    padding: 35px;
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #1B1B22;
+    padding: 10px;
+}
+
+h1 {
+    max-width:100px;
+    margin: auto;
+    margin-top: 10px;
+    background-color:#FF580A;
+    text-align: center;
+}
+
+h2 {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: var(--heading-font);
+    color:#FF580A;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.answer {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+    color:#58A4B0;
+    text-align: center;
+}
+
+footer {
+    background-color:#FF580A;
+    color: #1B1B22;
+    text-decoration: none;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 a:hover {
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.logo {
+    width: 80px
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
