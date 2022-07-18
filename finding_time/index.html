@@ -18,44 +18,70 @@
             <a href="about.html">About Us</a>
         </nav>
     </header>
-    <main>
-        <div>
-            <section id="text" class="opening">
-                When it comes to scheduling group events there is no longer any need to be intimidated.
-            </section>
-        </div>
-        <img id="img" class="cat" src="images/scared-cat-min.jpg" alt="Frightened cat">
-        <div>
-            <section id="text" class="opening">
-                Finding Time's advanced collaboration ability allows for seamless collaboration between any number of individuals 
-                remotely.
-            </section>
-            <section id="text" class="camparing">
-                Comparing callendars in person is not always efficient nor is it possible in the tech
-                based world of remote collaboration.
-            </section>
-        </div>
-        <img id="img" class="calender" src="images/scheduling-min.jpg" alt="group crowded around a single calender">
-        <div>
-            <section id="text">
-                Friend groups who are interested in working towards collaboration or hanging out will find 
-                themselves more than at home on our webpage as that's what we are striving to provide.
-            </section>
-        </div>
-        <img id="img" class="meme" src="images/space-mind-min.jpg" alt="It is smarter to use finding time">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">Open Nav Menu</span>
+      
+      <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
         
-    </main>
-    <h4 id="interactive" class="interactive">
-        <section class="call">
-            Become a Member!
-        </section>
-        <section class="call">
-            Start Scheduling!
-        </section>
-        <section class="call">
-            Support Us Now!
-        </section>
-    </h4>
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
+
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <main>
+            <div>
+                <section id="text" class="opening">
+                    When it comes to scheduling group events there is no longer any need to be intimidated.
+                </section>
+            </div>
+            <img id="img" class="cat" src="images/scared-cat-min.jpg" alt="Frightened cat">
+            <div>
+                <section id="text" class="opening">
+                    Finding Time's advanced collaboration ability allows for seamless collaboration between any number of individuals 
+                    remotely.
+                </section>
+                <section id="text" class="camparing">
+                    Comparing callendars in person is not always efficient nor is it possible in the tech
+                    based world of remote collaboration.
+                </section>
+            </div>
+            <img id="img" class="calender" src="images/scheduling-min.jpg" alt="group crowded around a single calender">
+            <div>
+                <section id="text">
+                    Friend groups who are interested in working towards collaboration or hanging out will find 
+                    themselves more than at home on our webpage as that's what we are striving to provide.
+                </section>
+            </div>
+            <img id="img" class="meme" src="images/space-mind-min.jpg" alt="It is smarter to use finding time">
+            
+        </main>
+        <h4 id="interactive" class="interactive">
+            <section class="call">
+                Become a Member!
+            </section>
+            <section class="call">
+                Start Scheduling!
+            </section>
+            <section class="call">
+                Support Us Now!
+            </section>
+        </h4>
+      </div> 
     <footer>
         <h2>Finding Time &copy; 2022 - Michael Wallentine</h2>
         <h3><a href="site-plan.html">Site Plan</a></h3>
@@ -77,3 +103,4 @@
     </footer>
 </body>
 </html>
+
