@@ -58,6 +58,7 @@ nav a {
     margin-left:-125px;
     text-align:center;
     color: var(--accent1-color);
+    font-family: var(--heading-font);
 }
 
 nav a:hover {
@@ -77,6 +78,7 @@ main {
     border-color: var(--primary-color);
     border-style:double;
     border-width: 5px;
+    font-family: var(--paragraph-font);
 }
 
 
@@ -164,6 +166,7 @@ h3 {
 
 h3 a {
     color: var(--accent1-color);
+    font-family: var(--heading-font);
 }
 
 h3 a:hover {
