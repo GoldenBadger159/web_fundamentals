@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finding Time FAQ Page</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/faq_style.css">
 </head>
 <body>
     <header>
@@ -18,57 +18,88 @@
             <a href="about.html">About Us</a>
         </nav>
     </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">Open Nav Menu</span>
+      
+      <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+    </script>
     <main>
         <h1 class="faq-header">FAQ</h1> 
-        <h2 calss="question">
-            How do I use the site?
-            <h4 class="answer">
-                Our webpage will provide all resources needed to complete seamless collaboration. 
-                One member of the group will need to register a free account with Finding Time to create an event 
-                proposition. They will be able to add a brief overview of the activity, a time frame length, 
-                and a host location schedule if necessary. From there the host will fill out their availability and will 
-                be given a link to send to the other members. Each of the members in the group need simply to follow the 
-                link, enter their phone number to be notified when a time is chosen, and fill out their availability. 
-                That's all. The rest is handled by our system which will compare the availability of each member in 
-                intervals as accurate as fifteen minutes and highlight periods inn a scale from red to green with red being 
-                less than 20% of the members available and green being 100%. The registered member needs only to check for the 
-                colors matching the desired turn out and select the time to notify each member via text message. 
-            </h4>
-        </h2>
-        <h2 calss="question">
-            Are there constraints on where we can host the event? 
-            <h4 class="answer">
-                By adding a location in the description of your event you can upload scheduling for the building as 
-                well as for each party member. So long as you have internet access any host location is more than viable 
-                to schedule with our software. 
-            </h4>
-            <img src="images/collaboration-min.jpg" alt="gears working together">
-        </h2>
-        <h2 calss="question">
-            How long does it take to schedule an event?
-            <h4 class="answer">
-                Being able to schedule last minute as well as months in advance are both very important and incredibly crucial 
-                aspects we work to integrate into our system. Meaning you can use our resources anytime. Simply follow the link 
-                provided by a registered member to fill out your availability when you have the time, and no worries, you can 
-                always come back and update it later. As soon as everyone has added their availability the results should be ready 
-                to view for the host.
-            </h4>
-        </h2>
-        <h2 calss="question">
-            What does your software do?
-            <h4 class="answer">
-                We strive to create a seamless integration of complex schedules and availability gathered from many peoples 
-                into one collective calendar for the group to decide more efficiently when all or most of the group can attend 
-                various activities providing an easy workaround for scheduling conflicts.
-            </h4>
-            <img src="images/index-min.jpg" alt="Meme about it being smart to use our site">
-        </h2>
-        
+        <div class="site">
+            <h1 calss="question">
+                How do I use the site?
+                <h4 class="answer">
+                    Our webpage will provide all resources needed to complete seamless collaboration. 
+                    One member of the group will need to register a free account with Finding Time to create an event 
+                    proposition. They will be able to add a brief overview of the activity, a time frame length, 
+                    and a host location schedule if necessary. From there the host will fill out their availability and will 
+                    be given a link to send to the other members. Each of the members in the group need simply to follow the 
+                    link, enter their phone number to be notified when a time is chosen, and fill out their availability. 
+                    That's all. The rest is handled by our system which will compare the availability of each member in 
+                    intervals as accurate as fifteen minutes and highlight periods inn a scale from red to green with red being 
+                    less than 20% of the members available and green being 100%. The registered member needs only to check for the 
+                    colors matching the desired turn out and select the time to notify each member via text message. 
+                </h4>
+            </h1>
+        </div>
+        <div class="local">   
+            <h1 calss="question">
+                Are there constraints on where we can host the event? 
+                <h4 class="answer">
+                    By adding a location in the description of your event you can upload scheduling for the building as 
+                    well as for each party member. So long as you have internet access any host location is more than viable 
+                    to schedule with our software. 
+                </h4>
+                <img class="faq" src="images/collaboration-min.jpg" alt="gears working together">
+            </h1>
+        </div>
+        <div class="time">   
+            <h1 calss="question">
+                How long does it take to schedule an event?
+                <h4 class="answer">
+                    Being able to schedule last minute as well as months in advance are both very important and incredibly crucial 
+                    aspects we work to integrate into our system. Meaning you can use our resources anytime. Simply follow the link 
+                    provided by a registered member to fill out your availability when you have the time, and no worries, you can 
+                    always come back and update it later. As soon as everyone has added their availability the results should be ready 
+                    to view for the host.
+                </h4>
+            </h1>
+        </div>
+        <div class="software"> 
+            <h1 calss="question">
+                What does your software do?
+                <h4 class="answer">
+                    We strive to create a seamless integration of complex schedules and availability gathered from many peoples 
+                    into one collective calendar for the group to decide more efficiently when all or most of the group can attend 
+                    various activities providing an easy workaround for scheduling conflicts.
+                </h4>
+                <img class="faq" src="images/index-min.jpg" alt="Meme about it being smart to use our site">
+            </h1>
+        </div>   
     </main>
     <footer>
-        <h3>Finding Time &copy; 2022 - Michael Wallentine</h3>
+        <h2>Finding Time &copy; 2022 - Michael Wallentine</h2>
         <h3><a href="site-plan.html">Site Plan</a></h3>
         <h3><a href="contactus.html">Contact Us</a></h3>
+        <h3><a href="index.html">Home</a></h3>
+        <h3><a href="about.html">About Us</a></h3>
         <div class="social">
             <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="fb icon">
